@@ -1,0 +1,3 @@
+My name is Blessing
+I'm learning python
+And believe me, I find it interesting
