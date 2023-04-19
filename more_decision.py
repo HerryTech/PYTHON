@@ -14,7 +14,7 @@ if door == "1":
     elif bear == "2":
         print("The bear eats your legs off. Good job!")
     else:
-        print("Well, doing %s is probably better. Bear runs away" % bear)
+        print("Well, doing nothing is probably better. Bear runs away")
         
 elif door == "2":
     print("You stare into the endless abyss at Cthulhu's retina")
