@@ -1,5 +1,5 @@
-from car import Car
-from car import ElectricCar as EC
+from car import Car  #They all can be written as from car import *
+from car import ElectricCar as EC # Aliase
 from car import Battery
 
 my_car = Car("audi", "a4", 2019)
