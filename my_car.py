@@ -1,4 +1,6 @@
-from car import *
+from car import Car
+from car import ElectricCar as EC
+from car import Battery
 
 my_car = Car("audi", "a4", 2019)
 print(my_car.descriptive_name())
@@ -22,7 +24,7 @@ my_used_car.read_odometer()
 my_used_car.fill_gas_tank()
 
 print("-" * 10)
-my_tesla = ElectricCar("tesla", "model 5", 2019)
+my_tesla = EC("tesla", "roadster", 2019)
 print(my_tesla.descriptive_name())
 my_tesla.battery.describe_battery()
 my_tesla.fill_gas_tank()
