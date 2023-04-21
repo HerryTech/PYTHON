@@ -13,10 +13,10 @@ class Engine():
     def play(self):
         current_scene = self.scene_map.opening_scene()
         
-    """ while True:
+        while True:
             print("\n--------")
             next_scene_name = current_scene.enter()
-            current_scene = self.scene_map.next_scene(next_scene_name)"""
+            current_scene = self.scene_map.next_scene(next_scene_name)
 
 class Death(Scene):
     quips = [
@@ -181,4 +181,5 @@ class Map():
         return self.next_scene(self.start_scene)
     
 a_map = Map('central_corridor')
-Engine(a_map).play()
+a_game = Engine(a_map)
+a_game.play()
