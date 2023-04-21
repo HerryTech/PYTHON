@@ -14,6 +14,9 @@ print("-" * 10)
 
 with open(filename) as file_object:
     lines = file_object.readlines()
-    
+    print(lines)
+
+file = ''  
 for line in lines:
-    print(line.rstrip())
+    file += line.rstrip()
+    print(len(file))
