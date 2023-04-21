@@ -23,8 +23,6 @@ for line in lines:
     
     
 print(f"{file[20:]}") 
-
-
 print(file)
 print(f"{file[:20]}") 
 print(len(file))

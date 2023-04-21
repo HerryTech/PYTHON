@@ -1,6 +1,4 @@
-from sys import argv
-
-script, filename = argv
+filename = "./File/exp2.txt"
 
 txt = open(filename)
 
