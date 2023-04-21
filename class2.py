@@ -34,6 +34,7 @@ class Restaurant:
     def __init__(self, restaurant_name, cuisine_type):
         self.restaurant_name = restaurant_name
         self.cuisine_type = cuisine_type
+        self.number_served = 20
         
     def describe_restaurant(self):
         print("This is a fine restaurant")
@@ -46,12 +47,22 @@ class Restaurant:
     def open_restuarant(self):
         print(f"{self.restaurant_name} is opened 24hrs")
         
+    def service_rendered(self, served):
+        print("How many times were you served?")
+        
+        if served >= self.number_served:
+            self.number_served += served
+            print(f"We have served {self.number_served} times")
+        else:
+            print("Not relevant")
+        
 restaurant1 = Restaurant("cook_it", "French")
 restaurant2 = Restaurant("eat_it", "Italian")
 restaurant3 = Restaurant("the_best", "Nigerian")
 
 restaurant1.describe_restaurant()
 restaurant1.open_restuarant()
+restaurant1.service_rendered(45)
 
 print("-" * 10)
 
@@ -71,6 +82,7 @@ class User:
         self.age = age
         self.resident = resident
         self.best_food = best_food
+        self.login_attempt =  0
     
     def describe_user(self):
         print(f"My name is {self.first_name} {self.last_name}")
@@ -78,10 +90,30 @@ class User:
         print(f"I live in {self.resident}")
         print(f"{self.best_food} is my best food")
         
+    def increment_login_attempt(self):
+        self.login_attempt += 1
+        if self.login_attempt == 1:
+            print(f"You have logged in {self.login_attempt} time")
+        else:
+            print(f"You have logged in {self.login_attempt} times")
+        
+    def reset_login_attempt(self):
+        self.login_attempt = 0
+        print(f"Your login attempt has been reset to {self.login_attempt}")
+            
 user1 = User("Ini", "Blessing", 25, "Canada", "Rice and beans")
 user2 = User("Heritage", "Thomas", 23, "Nigeria", "Pounded yam")
 
 user1.describe_user()
+print("-" * 10)
+user1.increment_login_attempt()
+user1.increment_login_attempt()
+user1.increment_login_attempt()
+user1.increment_login_attempt()
+user1.increment_login_attempt()
+user1.reset_login_attempt()
+user1.increment_login_attempt()
+user1.increment_login_attempt()
 print("-" * 10)
 user2.describe_user()
 
@@ -113,10 +145,10 @@ class Car:
     
 my_car = Car("audi", "a4", 2019)
 print(my_car.descriptive_name())
-my_car.odometer_reading = 23 #modifying attribute directly
+my_car.odometer_reading = 23_500 #modifying attribute directly
 my_car.read_odometer()
 
-my_car.update_odometer(10) #modifying attribute through a method
+my_car.update_odometer(12) #modifying attribute through a method
 my_car.read_odometer()
 
 print("-" * 10)
