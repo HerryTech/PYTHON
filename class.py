@@ -73,10 +73,26 @@ class Restaurant:
             print(f"We have served {self.number_served} times")
         else:
             print("Not relevant")
+            
+class IceCreamStand(Restaurant):
+    def __init__(self, restaurant_name, cuisine_type):
+        super().__init__(restaurant_name, cuisine_type)
+        self.flavor = ["Strawberries", "Vanilla", "Chocolate"]
+        
+    def display_flavor(self):
+        print("Here is the list of our available flavor:")
+        for flavor in self.flavor:
+            print(flavor)
         
 restaurant1 = Restaurant("cook_it", "French")
 restaurant2 = Restaurant("eat_it", "Italian")
 restaurant3 = Restaurant("the_best", "Nigerian")
+iceCreamRest = IceCreamStand("cream_it", "Ghanaian")
+
+print("-" * 10)
+iceCreamRest.display_flavor()
+
+print("-" * 10)
 
 restaurant1.describe_restaurant()
 restaurant1.open_restuarant()
