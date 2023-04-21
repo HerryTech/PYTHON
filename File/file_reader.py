@@ -1,30 +1,10 @@
-from sys import argv
-
-script, filename = argv
-
-txt = open(filename)
-
-print("Here is your file %r" % filename)
-print(txt.read())
-txt.close()
-
-print("Type the filename again")
-file_again = input("> ")
-
-txt_again = open(file_again)
-
-print(txt_again.read())
-txt_again.close()
-
-print("-" * 10 )
-
-with open("exp2.txt") as file_object:
+with open("./File/exp2.txt") as file_object:
     content = file_object.read()
 print(content.strip()) 
 
 print("-" * 10)
 
-filename = "exp2.txt"
+filename = "./File/exp2.txt"
 
 with open(filename) as file_object:
     for line in file_object:
@@ -51,7 +31,7 @@ print(len(file))
 
 print("-" * 10)
 
-filename = "pi.txt"
+filename = "./File/pi.txt"
 pi_string = ""
 
 with open(filename) as pi:
