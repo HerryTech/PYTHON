@@ -26,5 +26,5 @@ motorcycles.append('yamaha')
 motorcycles.append('suzuki') 
 print(motorcycles)
 
-motorcycles.insert(1, 'ducati')
+motorcycles.insert(1, 'ducati') # add a new element at any position in your list
 print(motorcycles)
