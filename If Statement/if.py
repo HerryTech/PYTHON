@@ -24,4 +24,8 @@ if people <= dogs:
     
 if people == dogs:
     print("People are dogs")
+    
+requested_topping = 'mushrooms'
+if requested_topping != 'anchovies':
+    print("\nHold the anchovies!")
 
