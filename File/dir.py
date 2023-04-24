@@ -1,15 +1,16 @@
-import os
+from os import *
 
 """Get name of currednt working directory"""
-print(os.getcwd())
+print(getcwd())
 """"List content of directory"""
-print(os.listdir())
+print(listdir())
 """Create a dir"""
 #os.mkdir("dirTest") 
 """Remove directory"""
 #os.rmdir("dirTest") 
 """Change into 'file' directory"""
-os.chdir("dirTest")
+chdir("dirTest")
+print(f"My current dirctory is {getcwd()}")
 
 
 
