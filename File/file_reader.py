@@ -1,4 +1,9 @@
 import fileinput
+import os
+
+os.rename("File\exp3.txt", "File\exp2.txt")
+os.remove("File\example.txt")
+
 with open("./File/exp2.txt") as file_object:
     content = file_object.read()
 print(content.strip()) 
@@ -52,3 +57,6 @@ else:
 with fileinput.input(files=("File\exp2.txt", "File\guest_book.txt")) as f: #open multiple files at once
     for line in f:
         print(line)
+        
+"""os.rename("File\exp2.txt", "File\exp3.txt") #renaming a exp2 to exp3"""
+
