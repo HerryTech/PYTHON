@@ -1,8 +1,8 @@
 import fileinput
 import os
 
-os.rename("File\exp3.txt", "File\exp2.txt")
-os.remove("File\example.txt")
+#os.rename("File\exp3.txt", "File\exp2.txt")
+#os.remove("File\example.txt")
 
 with open("./File/exp2.txt") as file_object:
     content = file_object.read()
