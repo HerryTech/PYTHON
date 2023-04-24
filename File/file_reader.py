@@ -1,3 +1,4 @@
+import fileinput
 with open("./File/exp2.txt") as file_object:
     content = file_object.read()
 print(content.strip()) 
@@ -48,3 +49,6 @@ if birthday in pi_string:
 else:
     print("Your birthday does not appears in pi_string")
 
+with fileinput.input(files=("File\exp2.txt", "File\guest_book.txt")) as f: #open multiple files at once
+    for line in f:
+        print(line)
