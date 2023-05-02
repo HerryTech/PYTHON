@@ -6,7 +6,7 @@ def rectangle(horizontal, vertical, color):
     t.color(color)
     t.begin_fill()
     t.shape("turtle")
-    t.speed("slowest")
+    t.speed("fast")
     
     
     for counter in range(1, 3):
@@ -34,4 +34,27 @@ rectangle(-15, 100, "grey")
 t.goto(-90, 100)
 rectangle(50, 20, "blue")
 
+#arms
+t.goto(-150, 70)
+rectangle(60, 15, "grey")
+t.goto(-150, 110)
+rectangle(15, 40, "grey")
 
+t.goto(10, 70)
+rectangle(60, 15, "grey")
+t.goto(55, 110)
+rectangle(15, 40, "grey")
+
+#neck
+t.goto(-50, 120)
+rectangle(15, 20, "grey")
+
+#head
+t.goto(-85, 170)
+rectangle(80, 50, "red")
+
+#eyes
+t.goto(10, 70)
+rectangle(60, 15, "grey")
+t.goto(55, 110)
+rectangle(15, 40, "grey")
