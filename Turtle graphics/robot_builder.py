@@ -32,7 +32,7 @@ rectangle(-15, 100, "grey")
 
 #body
 t.goto(-90, 100)
-rectangle(50, 20, "blue")
+rectangle(100, 150, "red")
 
 #arms
 t.goto(-150, 70)
@@ -58,5 +58,11 @@ t.goto(-60, 160)
 rectangle(30, 10, "white")
 t.goto(-55, 155)
 rectangle(5, 5, "black")
-t.goto(-55, 155)
+t.goto(-40, 155)
 rectangle(5, 5, "black")
+
+#mouth
+t.goto(-65, 135)
+rectangle(40, 5, "black")
+
+t.hideturtle()
