@@ -66,3 +66,6 @@ t.goto(-65, 135)
 rectangle(40, 5, "black")
 
 t.hideturtle()
+
+print(t.window_width())
+print(t.window_height())
